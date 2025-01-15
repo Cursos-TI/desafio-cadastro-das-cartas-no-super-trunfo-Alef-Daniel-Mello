@@ -7,9 +7,43 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
+    int CityCode = 123;
+    char CityName[50] = "None";
+    int CityPopulation = 100;
+    float CityArea = 25.5;
+    int CityPlaces = 23;
+    
+     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
+    printf("Insira o código da cidade :\n");
+    scanf("%d",&CityCode);
+    printf("Código da cidade definido como : %d\n", CityCode);
+
+    printf("Agora, insira o nome da cidade :\n");
+    scanf("%s",&CityName);
+    printf("Nome da cidade definido como : %s\n", CityName);
+
+    printf("Agora insira a população da cidade :\n");
+    scanf("%d",&CityPopulation);
+    printf("População da cidade definida como : %d\n", CityPopulation);
+
+    printf("Insira também a área da cidade em metros quadrados :\n");
+    scanf("%f",&CityArea);
+    printf("Área da cidade definida como : %f metros quadrados\n", CityArea);
+
+    printf("Por último, insira a quantidade de pontos turísticos da cidade :\n");
+    scanf("%d",&CityPlaces);
+    printf("Quantidade de pontos turísticos definida como : %d\n", CityPlaces);
+    
+    printf("Valores definidos, mostrando resultados :\n");
+
+    printf("Nome : %s\n", CityName);
+    printf("Código : %d\n", CityCode);
+    printf("População : %d\n", CityPopulation);
+    printf("Área : %f metros quadrados\n", CityArea);
+    printf("Pontos turísticos : %d\n", CityPlaces);
+
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
