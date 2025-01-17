@@ -7,12 +7,16 @@
 //Teste larissa
 
 int main() {
-    int CityCode = 123;
+    int CityCode = 0;
     char CityName[50] = "None";
-    int CityPopulation = 100;
-    float CityArea = 25.5;
-    int CityPlaces = 23;
+    int CityPopulation = 0;
+    float CityArea = 0;
+    float CityPIB = 0;
+    int CityPlaces = 0;
     
+    float Density = 0;
+    float PIBpC = 0;
+
      // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
@@ -28,6 +32,10 @@ int main() {
     scanf("%d",&CityPopulation);
     printf("População da cidade definida como : %d\n", CityPopulation);
 
+    printf("Agora insira o PIB :\n");
+    scanf("%f",&CityPIB);
+    printf("PIB definido como : %f\n", CityPIB);
+
     printf("Insira também a área da cidade em metros quadrados :\n");
     scanf("%f",&CityArea);
     printf("Área da cidade definida como : %f metros quadrados\n", CityArea);
@@ -36,12 +44,18 @@ int main() {
     scanf("%d",&CityPlaces);
     printf("Quantidade de pontos turísticos definida como : %d\n", CityPlaces);
     
+    PIBpC = CityPIB / CityPopulation;
+    Density = CityPopulation / CityArea;
+
     printf("Valores definidos, mostrando resultados :\n");
 
     printf("Nome : %s\n", CityName);
     printf("Código : %d\n", CityCode);
     printf("População : %d\n", CityPopulation);
+    printf("PIB : %f\n", CityPIB);
+    printf("PIB per Capita : %f\n", PIBpC);
     printf("Área : %f metros quadrados\n", CityArea);
+    printf("Densidade populacional : %f\n", Density);
     printf("Pontos turísticos : %d\n", CityPlaces);
 
     // Cadastro das Cartas:
