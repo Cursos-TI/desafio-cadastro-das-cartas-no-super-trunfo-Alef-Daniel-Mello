@@ -107,10 +107,28 @@ int main() {
     printf("Cartas cadastradas, iniciando embate!\n");
     printf(" \n");
 
-    int PopulationFight = City1Population > City2Population;
 
     printf("Comparando população...\n");
-    
+    printf("Primeira cidade maior que a segunda cidade : %d\n", City1Population > City2Population);
+    printf("Comparando área...\n");
+    printf("Primeira cidade maior que a segunda cidade : %d\n", City1Area > City2Area);
+    printf("Comparando PIB...\n");
+    printf("Primeira cidade maior que a segunda cidade : %d\n", City1PIB > City2PIB);
+    printf("Comparando pontos turísticos...\n");
+    printf("Primeira cidade maior que a segunda cidade : %d\n", City1Places > City2Places);
+    printf("Comparando Densidade...\n");
+    printf("Primeira cidade maior que a segunda cidade : %d\n", Density1 > Density2);
+    printf("Comparando PIBperC...\n");
+    printf("Primeira cidade maior que a segunda cidade : %d\n", PIBpC1 > PIBpC2);
+        printf(" \n");
+
+        printf("Comparando Superpoder!\n");
+        long int City1Power = (int)City1Population + City1Area + City1PIB + City1Places;
+        long int City2Power = (int)City2Population + City2Area + City2PIB + City2Places;
+        printf("Primeira cidade : %d\n",City1Power);
+        printf("Segunda cidade : %d\n",City2Power);
+        printf("Primeira cidade maior que a segunda cidade : %d\n", City1Power > City2Power);
+
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
